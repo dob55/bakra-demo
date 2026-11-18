@@ -1,0 +1,30 @@
+@media(prefers-reduced-motion:no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .6s ease,transform .6s ease;
+  }
+  
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation: none!important;
+    transition: none!important;
+  }
+  
+  .reveal {
+    opacity: 1!important;
+    transform: none!important;
+  }
+}

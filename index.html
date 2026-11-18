@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f6f2">
+    <meta name="description" content="Бакра — ИИ-студия для малого и среднего бизнеса. Создаём ИИ-агентов, ботов и сайты, автоматизируем процессы, внедряем и сопровождаем решения.">
+    <title>Бакра — ИИ, который работает на ваш бизнес</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23c2410c'/%3E%3Cpath d='M32 12v40M12 32h40M18 18l28 28M18 46l28-28' stroke='%23fff9ed' stroke-width='7'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/contact-form.js" defer></script>
+    <script src="scripts/reveal.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="mark" viewBox="0 0 48 48"><path d="M24 4v40M4 24h40M10 10l28 28M10 38l28-28" fill="none" stroke="currentColor" stroke-width="7"/></symbol>
+      <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
+    <!-- Шапка и навигация -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Бакра — на главную"><svg class="brand-mark" aria-hidden="true"><use href="#mark"/></svg>бакра</a>
+        <nav class="navigation" aria-label="Основная навигация">
+          <a href="#about">О компании</a><a href="#projects">Проекты</a><a class="nav-contact" href="#contact">Контакты <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <!-- Первый экран -->
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> ИИ-СТУДИЯ ДЛЯ МАЛОГО И СРЕДНЕГО БИЗНЕСА
+          </p>
+          <h1 id="hero-title">
+            Меньше рутины.<br>Больше времени<br>на <span class="accent-word">бизнес<svg viewBox="0 0 310 18" aria-hidden="true"><path d="M3 12C81 0 199 1 307 10"/></svg></span>.
+          </h1>
+          <p class="hero-description">
+            Создаём ИИ-агентов, ботов и сайты. Связываем ваши сервисы, автоматизируем повторяющиеся задачи и поддерживаем всё после запуска.
+          </p>
+          <a class="button button-primary" href="#contact">Обсудить задачу <svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          <p class="hero-note">
+            От первого «а можно проще?» до работающего решения.
+          </p>
+        </div>
+        <div class="workflow" aria-label="Пример автоматизации: заявка поступает ИИ-агенту, затем информация передаётся в рабочую систему">
+          <div class="workflow-topline">
+            <span><span class="mini-dot" aria-hidden="true"></span> МЕНЬШЕ ДЕЙСТВИЙ ВРУЧНУЮ</span><span aria-hidden="true">↗</span>
+          </div>
+          <div class="workflow-stage">
+            <div class="flow-node node-request">
+              <span class="node-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v12H9l-4 4V4Z"/><path d="M9 8h6m-6 4h4"/></svg></span>
+              <div>
+                <strong>Новая заявка</strong><span>«Хочу узнать подробнее»</span>
+              </div>
+              <span class="tiny-badge" aria-hidden="true">+1</span>
+            </div>
+            <div class="connector connector-one" aria-hidden="true">
+              <span>01</span><span>↓</span>
+            </div>
+            <div class="agent-orbit" aria-hidden="true">
+              <div class="orbit-ring ring-one">
+              </div>
+              <div class="orbit-ring ring-two">
+              </div>
+              <div class="agent-core">
+                <svg><use href="#mark"/></svg>
+              </div>
+              <span class="orbit-spark spark-one">✦</span><span class="orbit-spark spark-two">+</span>
+            </div>
+            <div class="agent-label">
+              <strong>Ваш ИИ-агент</strong><span>Понимает · Обрабатывает · Передаёт</span>
+            </div>
+            <div class="connector connector-two" aria-hidden="true">
+              <span>02</span><span>↓</span>
+            </div>
+            <div class="flow-node node-system">
+              <span class="node-icon system-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16m-10 0v10"/></svg></span>
+              <div>
+                <strong>Рабочая система</strong><span>Заявка уже на своём месте</span>
+              </div>
+              <span class="node-check"><svg aria-hidden="true"><use href="#check"/></svg></span>
+            </div>
+          </div>
+          <div class="workflow-bottom">
+            <span>Рутина — агенту. Решения — вам.</span><span class="demo-label">ПРИМЕР СЦЕНАРИЯ</span>
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <span>Технологии становятся полезными,<br>когда освобождают ваше время.</span><a href="#about">Познакомимся ближе <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+      <!-- О компании -->
+      <section class="about section container" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow section-index">
+            01 / О КОМПАНИИ
+          </p>
+          <h2 id="about-title">
+            Сложные технологии.<br><span class="text-muted">Понятная польза.</span>
+          </h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-intro reveal">
+            <p>
+              Мы — «Бакра». Помогаем небольшим командам делать больше: без бесконечного копирования данных, потерянных заявок и ручных отчётов.
+            </p>
+            <p class="body-muted">
+              Начинаем с вашей задачи и подбираем подходящие инструменты. Объясняем простыми словами, проверяем идею на небольшом пилоте и остаёмся рядом после запуска.
+            </p>
+            <div class="about-signature">
+              <svg aria-hidden="true"><use href="#mark"/></svg><span>Встраиваем ИИ в процессы.<br>Возвращаем людям время.</span>
+            </div>
+          </div>
+          <div class="services">
+            <article class="service reveal">
+              <span class="service-number">01</span>
+              <div>
+                <h3>
+                  ИИ-агенты и боты
+                </h3>
+                <p>
+                  Принимают обращения, отвечают по базе знаний и помогают команде с повседневными задачами. Сложные вопросы передают человеку.
+                </p>
+              </div>
+              <span class="service-plus" aria-hidden="true">↗</span>
+            </article>
+            <article class="service reveal">
+              <span class="service-number">02</span>
+              <div>
+                <h3>
+                  Сайты и автоматизация
+                </h3>
+                <p>
+                  Создаём сайты и связываем их с рабочими сервисами. Помогаем данным попадать туда, где они нужны, без повторного ввода.
+                </p>
+              </div>
+              <span class="service-plus" aria-hidden="true">↗</span>
+            </article>
+            <article class="service reveal">
+              <span class="service-number">03</span>
+              <div>
+                <h3>
+                  Внедрение и сопровождение
+                </h3>
+                <p>
+                  Проверяем сценарии, запускаем решение, готовим инструкции. Следим за работой и дорабатываем под новые задачи.
+                </p>
+              </div>
+              <span class="service-plus" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+        <div class="process-strip reveal">
+          <span class="process-caption">ОТ ЗАДАЧИ К РЕЗУЛЬТАТУ</span>
+          <ol>
+            <li>
+              <span>01</span> Разбираем процесс
+            </li>
+            <li aria-hidden="true" class="process-arrow">
+              →
+            </li>
+            <li>
+              <span>02</span> Проверяем на пилоте
+            </li>
+            <li aria-hidden="true" class="process-arrow">
+              →
+            </li>
+            <li>
+              <span>03</span> Внедряем и поддерживаем
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- Демонстрационные проекты -->
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container section">
+          <div class="projects-heading reveal">
+            <div>
+              <p class="eyebrow section-index">
+                02 / ПРОЕКТЫ
+              </p>
+              <h2 id="projects-title">
+                Вот что можно<br><span class="text-muted">делегировать ИИ.</span>
+              </h2>
+            </div>
+            <p>
+              Три примера того, как автоматизация<br class="desktop-break"> может работать в вашем бизнесе.<br><span class="project-disclaimer">Демонстрационные концепции, не клиентские кейсы.</span>
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-art art-inbox" aria-hidden="true">
+                <span class="art-caption">ЗАЯВКИ / БЕЗ ПОТЕРЬ</span>
+                <div class="inbox-stack">
+                  <div class="inbox-message">
+                    <span class="avatar">А</span>
+                    <div>
+                      <b>Подскажите по услугам</b><span>Новое обращение</span>
+                    </div>
+                    <span class="message-dot"></span>
+                  </div>
+                  <div class="inbox-route">
+                    <span>✦</span><i></i><span>↓</span>
+                  </div>
+                  <div class="inbox-result">
+                    <span class="small-check">✓</span>
+                    <div>
+                      <b>Передано менеджеру</b><span>Контакты и задача собраны</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="art-number">01</span>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Демонстрационный пример</span>
+                <h3>
+                  ИИ-агент для заявок
+                </h3>
+                <p>
+                  Собирает информацию, отвечает на типовые вопросы и передаёт обращение нужному сотруднику.
+                </p>
+                <div class="project-tags">
+                  <span>Обращения</span><span>CRM</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-art art-knowledge" aria-hidden="true">
+                <span class="art-caption">ЗНАНИЯ / ПОД РУКОЙ</span>
+                <div class="knowledge-doc doc-back">
+                  <div>
+                  </div>
+                  <div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div class="knowledge-doc doc-front">
+                  <span class="doc-symbol">≡</span>
+                  <div>
+                  </div>
+                  <div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+                <div class="knowledge-answer">
+                  <span>✦</span>
+                  <div>
+                    <b>Ответ найден</b><span>На основе документов компании</span>
+                  </div>
+                </div>
+                <span class="art-number">02</span>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Демонстрационный пример</span>
+                <h3>
+                  Помощник по базе знаний
+                </h3>
+                <p>
+                  Находит ответы в документах компании, указывает источник и помогает команде быстрее разобраться в вопросе.
+                </p>
+                <div class="project-tags">
+                  <span>Документы</span><span>Поиск знаний</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-art art-documents" aria-hidden="true">
+                <span class="art-caption">ДОКУМЕНТЫ / ПО ПОРЯДКУ</span>
+                <div class="document-sheet">
+                  <div class="sheet-heading">
+                    <span></span><b>Договор</b>
+                  </div>
+                  <div class="sheet-line">
+                  </div>
+                  <div class="sheet-line short">
+                  </div>
+                  <div class="sheet-field">
+                    <span>Клиент</span><b>Заполнено</b><span>✓</span>
+                  </div>
+                  <div class="sheet-field">
+                    <span>Реквизиты</span><b>Заполнено</b><span>✓</span>
+                  </div>
+                  <div class="sheet-line">
+                  </div>
+                  <div class="sheet-line short">
+                  </div>
+                </div>
+                <div class="document-ready">
+                  <span>✓</span> Черновик готов к проверке
+                </div>
+                <span class="art-number">03</span>
+              </div>
+              <div class="project-body">
+                <span class="project-type">Демонстрационный пример</span>
+                <h3>
+                  Автоматизация документов
+                </h3>
+                <p>
+                  Подготавливает документы по шаблонам и сокращает повторный ввод данных. Сотруднику остаётся проверить результат.
+                </p>
+                <div class="project-tags">
+                  <span>Шаблоны</span><span>Меньше рутины</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Контакты и форма -->
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container section contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow section-index">
+              03 / ДАВАЙТЕ ОБСУДИМ
+            </p>
+            <h2 id="contact-title">
+              Ваша рутина —<br>наша следующая<br><span>задача.</span>
+            </h2>
+            <p>
+              Что ваша команда делает вручную каждый день? Расскажите о процессе — найдём, с чего начать.
+            </p>
+            <div class="contact-placeholders">
+              <div>
+                <span>ПОЧТА</span>
+                <p>
+                  [Email компании]
+                </p>
+              </div>
+              <div>
+                <span>TELEGRAM</span>
+                <p>
+                  [Telegram компании]
+                </p>
+              </div>
+              <div>
+                <span>ТЕЛЕФОН</span>
+                <p>
+                  [Телефон компании]
+                </p>
+              </div>
+            </div>
+            <p class="contact-note">
+              Контакты-заглушки. Настоящие появятся здесь позже.
+            </p>
+          </div>
+          <div class="form-panel reveal">
+            <div id="form-content">
+              <p class="form-kicker">
+                НАЧНЁМ СО ЗНАКОМСТВА
+              </p>
+              <h3>
+                Расскажите о задаче
+              </h3>
+              <p class="form-notice" id="form-notice">
+                Демонстрационная форма: сообщения пока не отправляются и не сохраняются.
+              </p>
+              <form id="contact-form" method="post" action="/api/contact" data-consent-version="" aria-describedby="form-notice" novalidate>
+                <fieldset id="form-fields" disabled>
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label for="name">Имя <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" placeholder="Как к вам обращаться?" autocomplete="off" maxlength="120" required aria-describedby="name-error"><span class="field-error" id="name-error"></span>
+                    </div>
+                    <div class="form-field">
+                      <label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" placeholder="you@company.ru" autocomplete="off" maxlength="254" required aria-describedby="email-error"><span class="field-error" id="email-error"></span>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="phone">Телефон (необязательно)</label><input id="phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="off" maxlength="40" aria-describedby="phone-error"><span class="field-error" id="phone-error"></span>
+                  </div>
+                  <div class="form-field">
+                    <label for="message">Описание задачи <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="4" placeholder="Что хотелось бы упростить или автоматизировать?" autocomplete="off" maxlength="3000" required aria-describedby="message-error"></textarea><span class="field-error" id="message-error"></span>
+                  </div>
+                  <div hidden>
+                    <label for="company-url">Сайт компании</label><input id="company-url" name="companyUrl" type="text" tabindex="-1" autocomplete="off">
+                  </div>
+                  <div class="form-privacy" id="form-privacy" hidden>
+                    <p><a href="/privacy" target="_blank" rel="noopener">Политика обработки персональных данных</a></p>
+                    <div class="form-consent">
+                      <input id="consent" name="consent" type="checkbox" required autocomplete="off" aria-describedby="consent-text consent-error">
+                      <span><label for="consent">Даю согласие на обработку персональных данных</label> (<a id="consent-text" href="/consent" target="_blank" rel="noopener">текст согласия</a>)</span>
+                    </div>
+                    <span class="field-error" id="consent-error"></span>
+                  </div>
+                  <div class="form-bottom">
+                    <span>* Обязательные поля</span><button class="button button-primary" type="submit"><span id="submit-label">Отправить</span> <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+                  </div>
+                </fieldset>
+              </form>
+              <noscript>
+                <p class="noscript-notice">
+                  Чтобы воспользоваться формой, включите JavaScript.
+                </p>
+              </noscript>
+            </div>
+            <div class="form-success" id="form-success" hidden>
+              <span class="success-icon"><svg aria-hidden="true"><use href="#check"/></svg></span>
+              <h3 id="success-title" tabindex="-1">
+                Спасибо!
+              </h3>
+              <p id="success-description">
+                Это демонстрационная форма — сообщение не отправлено.
+              </p>
+              <button class="button button-primary" id="reset-form" type="button">Заполнить снова <svg aria-hidden="true"><use href="#arrow"/></svg></button>
+            </div>
+            <div class="form-status" id="form-status" role="status" aria-live="polite">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#top" aria-label="Бакра — вернуться наверх"><svg class="brand-mark" aria-hidden="true"><use href="#mark"/></svg>бакра</a>
+        <p>
+          Технологии с пользой для людей.
+        </p>
+        <span>© <span id="year">2026</span> Бакра</span><a class="back-top" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
