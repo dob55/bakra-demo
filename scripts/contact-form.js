@@ -23,16 +23,21 @@
     message: "Расскажите немного о вашей задаче.",
     consent: "Отметьте согласие, чтобы отправить заявку.",
   };
+  const maxMessageLength = 1000;
   const failureMessage = "Не удалось подтвердить отправку. Попробуйте ещё раз.";
   let sending = false;
 
-  function showFieldError(field, invalid) {
-    document.querySelector("#" + field.id + "-error").textContent = invalid ? errorMessages[field.name] : "";
+  function showFieldError(field, invalid, message = errorMessages[field.name]) {
+    document.querySelector("#" + field.id + "-error").textContent = invalid ? message : "";
     if (invalid) field.setAttribute("aria-invalid", "true");
     else field.removeAttribute("aria-invalid");
   }
 
   function validateField(field) {
+    if (field.name === "message" && [...field.value].length > maxMessageLength) {
+      showFieldError(field, true, `Описание задачи должно быть не длиннее ${maxMessageLength} символов.`);
+      return false;
+    }
     const value = field.value.trim();
     let valid = field.type === "checkbox" ? field.checked : (!field.required || Boolean(value));
     if (field.type === "email") valid &&= field.validity.valid;
